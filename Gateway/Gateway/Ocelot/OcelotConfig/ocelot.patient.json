@@ -1,0 +1,52 @@
+{
+    "GlobalConfiguration": {
+        "BaseUrl": "http://localhost:5275"
+    },
+    "Routes": [
+        {
+            "DownstreamPathTemplate": "/api/v1/patient/patient/create",
+            "DownstreamScheme": "http",
+            "DownstreamHttpMethod": "post",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5275
+                }
+            ],
+            "UpstreamPathTemplate": "/api/v1/patient/patient/create",
+            "UpstreamHttpMethod": [
+                "Post"
+            ]
+        },
+        {
+            "DownstreamPathTemplate": "/api/v1/patient/Appointment/GetAll",
+            "DownstreamScheme": "http",
+            "DownstreamHttpMethod": "get",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5275
+                }
+            ],
+            "UpstreamPathTemplate": "/api/v1/patient/Appointment/GetAll",
+            "UpstreamHttpMethod": [
+                "get"
+            ]
+        },
+        {
+            "DownstreamPathTemplate": "/api/v1/patient/Appointment/Create",
+            "DownstreamScheme": "http",
+            "DownstreamHttpMethod": "post",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5275
+                }
+            ],
+            "UpstreamPathTemplate": "/api/v1/patient/Appointment/Create",
+            "UpstreamHttpMethod": [
+                "post"
+            ]
+        }
+    ]
+}

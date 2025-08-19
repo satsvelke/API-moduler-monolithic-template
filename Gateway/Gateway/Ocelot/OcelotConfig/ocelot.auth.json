@@ -1,0 +1,22 @@
+{
+    "GlobalConfiguration": {
+        "BaseUrl": "http://localhost:5047"
+    },
+    "Routes": [
+        {
+            "DownstreamPathTemplate": "/api/v1/auth/auth/login",
+            "DownstreamScheme": "http",
+            "DownstreamHttpMethod": "post",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5047
+                }
+            ],
+            "UpstreamPathTemplate": "/api/v1/auth/auth/login",
+            "UpstreamHttpMethod": [
+                "Post"
+            ]
+        }
+    ]
+}
